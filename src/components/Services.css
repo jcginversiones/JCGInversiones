@@ -1,0 +1,9 @@
+.services{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,26 @@
+.gridItem{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border: thin solid transparent;
+    border-radius: var(--border);
+    background-color: var(--border);
+    transition: .3s ease-out;
+}
+
+
+.gridItem:hover{
+    border:thin solid var(--white);
+}
+
+
+.gridItem p{
+    color: var(--whiteTransparent);
+}
+
+
+.gridItem p span{
+    color: var(--color1);
+}

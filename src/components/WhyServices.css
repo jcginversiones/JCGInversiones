@@ -1,0 +1,23 @@
+.whyServices{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem;
+}
+
+
+.whyServices h3{
+    font-size: xx-large;
+}
+
+
+.wsGrid{
+    width: 100%;
+    display: grid; /* Establece el contenedor como una cuadrícula */
+    grid-template-columns: repeat(3, 1fr); /* Define 3 columnas de igual tamaño */
+    grid-template-rows: repeat(2, auto); /* Define 2 filas. El tamaño se ajusta automáticamente */
+    gap: 1rem; /* Espacio entre los elementos de la cuadrícula */
+    padding: 20px; /* Espacio interior del contenedor */
+}

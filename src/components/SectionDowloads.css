@@ -1,0 +1,26 @@
+.sectionDowloads{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sDPart1 h2{
+    line-height: normal;
+    font-size: xx-large;
+}
+
+.sDPart1 p{
+    color: var(--whiteTransparent);
+    line-height: normal;
+    margin-top: 1rem;
+}
+
+
+.sDPart2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}

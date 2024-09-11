@@ -1,0 +1,56 @@
+.buttonAction{
+    color: var(--white);
+    background-color: transparent;
+    border-radius: var(--border);
+    padding: .5rem 1rem;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    line-height: normal;
+    user-select: none;
+    transition: .3s ease-out;
+}
+.buttonAction:active{
+    transform: scale(.90);
+}
+
+
+
+
+.action1{
+    background-color: var(--color1Transparent);
+}
+.action1:hover{
+    background-color: var(--color1);
+}
+
+
+
+
+.action2{
+    background-color: var(--color2);
+    color:var(--whiteTransparent);
+    transition: .3s ease-out;
+}
+.action2:hover{
+    color: var(--white);
+}
+
+
+
+
+.action3{
+    color:var(--whiteTransparent);
+    transition: .3s ease-out;
+}
+.action3:hover{
+    background-color: var(--color3);
+    color: var(--white);
+}
+
+
+
+
+

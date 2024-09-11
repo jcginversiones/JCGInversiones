@@ -1,0 +1,82 @@
+:root {
+  line-height: 1.5;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-family: "Urbanist", sans-serif, system-ui, Helvetica;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+  /* VARS */
+  --color1: #a20021;  
+  --color2: #20242A;
+  --color3: #2B3038;
+
+  --white: #F3F4F8;
+  --black: #0d0d0d;
+
+  --color1Transparent: rgb(162, 0, 33, .7);
+  --brackTransparent: rgba(0,0,0,.7);
+  --whiteTransparent: rgba(243,244,248,.7);
+
+  --border: .3rem;
+}
+
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color:var(--white);
+  user-select: text;
+  text-decoration: none;
+
+  font-family: "Urbanist", sans-serif, system-ui, Helvetica;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+
+body{
+  position: relative;
+  /* max-width: 1440px;  */ 
+  min-height: 100dvh;
+  margin: 0rem auto;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+
+@media only screen and (max-width: 850px){
+ 
+}
+
+

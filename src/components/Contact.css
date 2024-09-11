@@ -1,0 +1,63 @@
+.contact{
+    width: 100%;
+    min-height: 50vh;
+    padding: 0rem 2rem;
+    display: flex;
+    align-items: normal;
+    justify-content: space-evenly;
+}
+
+
+
+.contact img{
+    width: 20rem;
+    mask-image: linear-gradient(180deg, #fff 10%, transparent 90%);
+}
+
+
+.contactContainer{ 
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.contentIvite{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.contentIvite h3{
+    line-height: normal;
+    font-size: xx-large;
+    
+}
+
+
+
+
+
+.contactContainer p{
+    color: var(--whiteTransparent);
+    line-height: normal;
+}
+
+
+.cTextInvite{
+    margin: 1rem 0rem;
+}
+
+
+.cButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+

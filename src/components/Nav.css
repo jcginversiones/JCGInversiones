@@ -1,0 +1,37 @@
+.navSup{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem 0rem 2rem;
+}
+
+
+.ulNS{
+    display:flex;
+    align-items: center;
+    justify-self: center;
+    gap: 1rem;   
+    list-style: none;
+}
+
+
+.ulNS li{
+    color: var(--whiteTransparent);
+    text-decoration: none;
+    font-weight: 500;
+    border: none;
+    border-bottom: thick solid transparent;
+    border-radius: var(--border);
+    transition: .3s ease-out;
+}
+
+
+
+.ulNS li:hover{
+    border-color: var(--color1);
+    color: var(--white);
+}
+
