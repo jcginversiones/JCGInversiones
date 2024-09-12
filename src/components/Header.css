@@ -61,6 +61,7 @@
 }
 
 .headerSection2 img {
+    width: 35rem;
     mask-image: linear-gradient(to left, black 10%, transparent);
 }
 
@@ -81,3 +82,42 @@
     font-weight: 800;
     color: var(--color3);
 }
+
+
+@media only screen and (max-width: 850px){
+    .header{
+        padding: 0rem 1rem;
+    }
+
+
+    .headerContent{
+        flex-direction: column-reverse;
+    }
+
+    .headerSection2{
+        position: absolute;
+        top: 0px;
+    }
+
+    .hSTittle {
+        text-wrap: pretty;
+        font-size: xx-large;
+        width: 100%;
+    }
+
+
+    .hSText2{
+        font-size: small;
+        text-wrap: balance;
+        margin-top: 2rem;
+    }
+
+
+    .headerFinalText{
+        flex-direction: column;
+        text-wrap: balance;
+        font-size: smaller;
+        line-height: normal;
+    }
+}
+

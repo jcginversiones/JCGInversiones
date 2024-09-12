@@ -1,6 +1,6 @@
 .services{
     width: 100%;
-    min-height: 50vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 2rem;

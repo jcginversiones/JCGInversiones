@@ -38,9 +38,11 @@ const ButtonAction : React.FC<ButtonActionProps> = ({ to, fn, text, colorSet, ty
     if(to){
       //SI RECIBE EL PARAMETRO "TO", FUNCIONA COMO UN "LINK"
     return (
-      <link href={to} className={color}>
+      <button className={color} type={typeOfButton} disabled={deshabilitado}>
+        <a href={to}>
           {text}
-      </link>
+        </a>
+      </button>
     )
     }else if(fn){
       //SI RECIBE EL PARAMETRO "FN", FUNCIONA COMO UN "ONCLICK"

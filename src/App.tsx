@@ -7,10 +7,10 @@ function App() {
 
   return (
     <>
-      <Header/>
-      <Presentation/>
-      <Services/>
-      <Contact/>
+      <Header id="header" />
+      <Presentation id="presentation" />
+      <Services id="services" />
+      <Contact id="contact" />
     </>
   )
 }

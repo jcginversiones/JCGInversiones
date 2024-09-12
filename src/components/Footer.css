@@ -5,7 +5,6 @@
     align-items: flex-start;
     justify-content: center;
     padding: 2rem 0rem;
-    background: linear-gradient(180deg, rgba(2, 0, 36, 0) 50%, rgba(162, 0, 33, 0.5942752100840336) 100%);
 }
 
 
@@ -15,4 +14,11 @@
     font-size: xx-small;
     padding: 0rem 5rem;
     border-inline: 2px solid var(--whiteTransparent);
+}
+
+
+@media only screen and (max-width: 850px){
+    .footerSection p{
+        padding: 0rem 1rem;
+    }
 }

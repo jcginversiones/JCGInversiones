@@ -3,12 +3,15 @@ import SectionDowloads from "./SectionDowloads";
 import WhyServices from './WhyServices';
 
 
-const Services :React.FC = () =>{
+interface ServicesProps{
+    id:string;
+}
+
+const Services :React.FC <ServicesProps>= ({id}) =>{
     return(
-        <section className="services">
+        <section className="services" id={id}>
             <WhyServices/>
-            <SectionDowloads/>
-            
+            <SectionDowloads/>            
         </section>
     )
 }

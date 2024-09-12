@@ -21,3 +21,19 @@
     gap: 1rem; /* Espacio entre los elementos de la cuadrícula */
     padding: 20px; /* Espacio interior del contenedor */
 }
+
+
+
+@media only screen and (max-width: 850px){
+    .whyServices h3 {
+        text-align: left;
+        text-wrap: balance;
+        line-height: 1.6rem;
+        padding: 0rem 2rem;
+    }
+    
+    
+    .wsGrid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

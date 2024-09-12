@@ -1,10 +1,15 @@
 import ButtonAction from './ButtonAction';
 import './Presentation.css';
 
-const Presentation : React.FC = () =>{
+interface PresentationProps {
+    id: string;
+  }
+
+const Presentation : React.FC<PresentationProps> = ({id}) =>{
     return(
-        <section className='presentation'>
+        <section className='presentation' id={id}>
             <img src="https://nestlewoodrealty.com/wp-content/uploads/bb-plugin/cache/Mike-Boris-Headshot-BW-circle-01ba2711a3436a70d133a99e4e8bf8a8-xrkymhae0bo4.jpg" alt="" />
+            {/* <img src="/juan1.png" alt="Trader a cargo Juan Giacovino" /> */}
             <article className='pProfile'>
                 <div className='pTrader'>
                     <p>- Trader Financiero -</p>
@@ -28,7 +33,7 @@ const Presentation : React.FC = () =>{
                         </a>
 
 
-                        <ButtonAction colorSet={1} text='Asesoria sin cargo'/>
+                        <ButtonAction colorSet={1} text='Asesoria sin cargo' to='https://wa.me/541121763182?text=Hola%20Juan,%20encontré%20tu%20perfil%20a%20través%20de%20la%20web%20y%20me%20interesaba%20saber%20sobre%20tus%20Servicios%20en%20Trading'/>
                 </div>
             </article>
 

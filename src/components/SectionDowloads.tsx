@@ -3,7 +3,7 @@ import './SectionDowloads.css';
 
 const SectionDowloads : React.FC = () =>{
     return(
-        <section className='sectionDowloads'>
+        <section className='sectionDowloads' id='descargas'>
             <div className='sDPart1'>
                 <h2>No dejes tu dinero estancado</h2>
                 <p>

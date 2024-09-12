@@ -1,6 +1,6 @@
 .contact{
     width: 100%;
-    min-height: 50vh;
+    min-height: 70vh;
     padding: 0rem 2rem;
     display: flex;
     align-items: normal;
@@ -11,6 +11,7 @@
 
 .contact img{
     width: 20rem;
+    aspect-ratio: 1 / 1;
     mask-image: linear-gradient(180deg, #fff 10%, transparent 90%);
 }
 
@@ -58,6 +59,48 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
+}
+
+
+
+@media only screen and (max-width: 850px){
+    .contactContainer{
+        padding: 0rem;
+    }
+
+    .contact{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact img{
+        display: none;
+    }
+
+
+    .contentIvite h3{
+        line-height: 1.6rem;
+    }
+
+
+    .contactContainer p {
+        font-size: smaller;
+    }
+
+
+    .cButtons{
+        margin-top: 2rem;
+    }
+
+    .cRedes p{
+        margin-top: 2rem;
+    }
+
+    .redesData span{
+        display: none;
+    }
+ 
 }
 
 

@@ -1,9 +1,14 @@
 import ButtonAction from './ButtonAction';
 import './Header.css';
 
-const Header : React.FC = () =>{
+
+interface HeaderProps {
+    id: string;
+  }
+
+const Header : React.FC<HeaderProps> = ({ id }) =>{
     return(
-        <header className='header'>
+        <header className='header' id={id}>
             <div className='headerContent'>
                 <section className='headerSection1'>
                     <p className='hSText1'>- INSTRUCTIVOS INCLUIDOS -</p>
@@ -11,13 +16,13 @@ const Header : React.FC = () =>{
                     <p className='hSText2'>Hace crecer tu Patrimonio con asesoría de Trading Personalizada. Invertir inteligentemente es posible</p>
 
                     <div className='hSButtons'>
-                        <ButtonAction  text='Pedir asesoria' colorSet={1} />
-                        <ButtonAction  text='Descargar Instructivo' colorSet={3} />
+                        <ButtonAction  text='Pedir asesoria' colorSet={1} to='#contact' />
+                        <ButtonAction  text='Descargar Instructivo' colorSet={3} to='#services  ' />
                     </div>
                 </section>
 
                 <section className='headerSection2'>
-                    <img src="https://capex.com/lat/online-trading/wp-content/uploads/sites/24/asset-platform1.png" alt="Finanzas Inteligentes" />
+                    <img src="/forex.png" alt="Finanzas Inteligentes" />
                 </section>
             </div>
 

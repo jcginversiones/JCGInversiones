@@ -2,11 +2,26 @@
     width: 100%;
     position: fixed;
     top: 0px;
+    left: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2rem 2rem 0rem 2rem;
+    z-index: 200;
+    background-color: var(--black);
 }
+
+
+
+.navSupContainer{
+    max-width: 1440px;
+    margin: 0 auto; /* Centra el contenedor dentro del nav */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 
 .ulNS{
@@ -34,4 +49,26 @@
     border-color: var(--color1);
     color: var(--white);
 }
+
+
+
+@media only screen and (max-width: 850px){
+    .navSup{
+        padding: 1rem 0rem;
+    }
+    
+    .navSupContainer{
+        justify-content: center;
+        padding:0rem;
+    }
+
+    .navSupContainer ul{
+        display: none;
+    }
+
+    .navSupContainer .buttonAction{
+        display: none;
+    }
+}
+
 

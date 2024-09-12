@@ -3,7 +3,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: var(--black);
 
   font-family: "Urbanist", sans-serif, system-ui, Helvetica;
   font-optical-sizing: auto;
@@ -56,15 +56,27 @@ body {
 }
 
 
+html{
+  scroll-behavior: smooth;
+}
+
+
+@keyframes mostrar{
+  0%{opacity: 0%;}
+  100%{opacity: 100%;}
+}
+
+
 body{
   position: relative;
-  /* max-width: 1440px;  */ 
+  max-width: 1440px;
   min-height: 100dvh;
   margin: 0rem auto;
   background-color: var(--black);
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  animation: mostrar .8s ease-in-out;  
 }
 
 
@@ -76,7 +88,9 @@ main{
 
 
 @media only screen and (max-width: 850px){
- 
+ body{
+  background: linear-gradient(180deg, var(--black), var(--color2));
+ }
 }
 
 
