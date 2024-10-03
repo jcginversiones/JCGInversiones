@@ -59,7 +59,7 @@ const CardServices : React.FC<CardServicesProps> = ({title, description,filePath
             <h3>{title}</h3>
             <p>{description}</p>
             <div className='csButtons'>
-                <ButtonAction colorSet={1} text='No tengo Cuenta' fn={handleDownload1}/>
+                <ButtonAction colorSet={1} text='Abrir Cuenta' fn={handleDownload1}/>
                 <ButtonAction colorSet={3} text='Ya tengo Cuenta' fn={handleDownload2}/>
             </div>
 

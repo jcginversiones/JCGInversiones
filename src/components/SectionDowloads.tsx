@@ -5,9 +5,9 @@ const SectionDowloads : React.FC = () =>{
     return(
         <section className='sectionDowloads' id='descargas'>
             <div className='sDPart1'>
-                <h2>No dejes tu dinero estancado</h2>
+                <h2>Opera con los mejores Brokers de Argentina</h2>
                 <p>
-                    Comencemos por lo primero, para invertir en el mercado vas a necesitar tener una cuenta en alguna plataforma oficial.
+                    Abrí tu cuenta para comprar y vender Bonos, Acciones, Cedears, FCI y más instrumentos de manera totalmente gratuita.
                     <br/>
                     Para ello te dejo los instructivos más detallados en PDF a dos de las mejores plataformas para que comencemos a trabajar juntos.                    
                 </p>
@@ -17,7 +17,7 @@ const SectionDowloads : React.FC = () =>{
             <div className='sDPart2'>
                 <CardServices 
                     title='IOL' 
-                    description='Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis nulla nostrum doloribus provident dolores necessitatibus ullam fugiat laboriosam soluta distinctio.' 
+                    description='Fundada en mayo del 2000 y en 2018 fue adquirida por el Grupo Supervielle,Agente de Liquidación y Compensación Integral (ALyCI) Nº 273/CNV,Agente Colocador y Distribuidor Integral de Fondos Comunes de Inversión (ACyDI FCI) Nº 1/CNV' 
                     filePath1='/APERTURA IOL.pdf' 
                     fileName1='IOL APERTURA'
                     filePath2='/REASIGNACION IOL.pdf'
@@ -26,7 +26,7 @@ const SectionDowloads : React.FC = () =>{
                 
                 <CardServices
                 title='Balanz' 
-                description='Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis nulla nostrum doloribus provident dolores necessitatibus ullam fugiat laboriosam soluta distinctio.' 
+                description='Mas de 20 años de experiencia de operador como Agente de Liquidación y Compensación en los mercados BYMA, MAE, MAV y Rofex. Las especies que se operan,son custodiadas por Caja de Valores S.A.' 
                 filePath1='/APERTURA BALANZ.pdf' 
                 fileName1='BALANZ APERTURA'
                 filePath2='/REASIGNACION BALANZ.pdf'

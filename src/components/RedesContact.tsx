@@ -9,7 +9,7 @@ const RedesContact : React.FC = () =>{
                 <span>/juanGiacovino</span>
             </div>
             
-            <p>Te dejo mis redes y canales donde también podés encontrarme</p>
+            <p>Te dejo mis redes y canales para que accedas a todo mi contenido</p>
             <div className='cRedesItems'>
                     <a href="#!" className='pRedItem'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
