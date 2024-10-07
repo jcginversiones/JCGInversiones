@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     border: none;
-    border: thin solid transparent;
+    border:thin solid rgba(255, 255, 255, .3);
     border-radius: var(--border);
     background-color: var(--border);
     transition: .3s ease-out;
@@ -32,6 +32,6 @@
     .gridItem{
         justify-content: flex-start;
         text-wrap: nowrap;
-        font-size: smaller;
+        font-size: smaller;        
     }
 }

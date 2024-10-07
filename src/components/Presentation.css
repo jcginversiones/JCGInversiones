@@ -9,6 +9,7 @@
 .presentation img{
     max-width: 40rem;
     aspect-ratio: 1 / 1;
+    mask-image: linear-gradient(180deg, #fff 41%, transparent 181%);
 }
 
 
@@ -104,8 +105,9 @@
 
 
     .presentation img {
-        max-width: 35rem;
-        mask-image: linear-gradient(180deg, #fff 10%, transparent 88%);
+        mask-image: linear-gradient(180deg, #fff 81%, transparent 110%);
+        position: absolute;
+        left: 0px;
     }
 }
 

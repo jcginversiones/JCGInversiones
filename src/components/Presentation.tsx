@@ -8,8 +8,8 @@ interface PresentationProps {
 const Presentation : React.FC<PresentationProps> = ({id}) =>{
     return(
         <section className='presentation' id={id}>
-            <img src="https://nestlewoodrealty.com/wp-content/uploads/bb-plugin/cache/Mike-Boris-Headshot-BW-circle-01ba2711a3436a70d133a99e4e8bf8a8-xrkymhae0bo4.jpg" alt="" />
-            {/* <img src="/juan1.png" alt="Trader a cargo Juan Giacovino" /> */}
+            {/* <img src="https://nestlewoodrealty.com/wp-content/uploads/bb-plugin/cache/Mike-Boris-Headshot-BW-circle-01ba2711a3436a70d133a99e4e8bf8a8-xrkymhae0bo4.jpg" alt="" /> */}
+            <img src="/profile.png" alt="Trader a cargo Juan Giacovino" />
             <article className='pProfile'>
                 <div className='pTrader'>
                     <p>- Asesor Financiero -</p>

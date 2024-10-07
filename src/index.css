@@ -88,9 +88,6 @@ main{
 
 
 @media only screen and (max-width: 850px){
- body{
-  background: linear-gradient(180deg, var(--black), var(--color2));
- }
 }
 
 

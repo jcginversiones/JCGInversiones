@@ -23,14 +23,18 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    z-index: 5;
 }
+
 
 .hSText1{
     letter-spacing: .2rem;
     color: var(--whiteTransparent);
     font-size: small;
     line-height: normal;
+    text-wrap: nowrap;
 }
+
 
 .hSTittle{
     font-weight: 800;
@@ -51,7 +55,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding-top: 1rem;
+    padding: 1rem .5rem;
 }
 
 .headerSection2{
@@ -62,7 +66,7 @@
 
 .headerSection2 img {
     width: 35rem;
-    mask-image: linear-gradient(to left, black 10%, transparent);
+    mask-image: linear-gradient(to left, black 60%, transparent);
 }
 
 
@@ -87,6 +91,7 @@
 @media only screen and (max-width: 850px){
     .header{
         padding: 0rem 1rem;
+        justify-content: space-evenly;
     }
 
 
@@ -99,17 +104,23 @@
         top: 0px;
     }
 
+    .headerSection2 img{
+        mask-image: linear-gradient(to top, transparent -35%, black 90%);
+    }
+
     .hSTittle {
         text-wrap: pretty;
         font-size: xx-large;
         width: 100%;
+        padding: 0rem .5rem;
     }
 
 
     .hSText2{
         font-size: small;
         text-wrap: balance;
-        margin-top: 2rem;
+        margin-top: 1rem;
+        padding: 0rem .5rem;
     }
 
 
@@ -118,6 +129,11 @@
         text-wrap: balance;
         font-size: smaller;
         line-height: normal;
+    }
+
+
+    .hSButtons {
+        padding: 1rem .5rem;
     }
 }
 

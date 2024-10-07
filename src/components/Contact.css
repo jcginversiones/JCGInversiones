@@ -66,6 +66,7 @@
 @media only screen and (max-width: 850px){
     .contactContainer{
         padding: 0rem;
+        z-index: 2;
     }
 
     .contact{
@@ -75,7 +76,10 @@
     }
 
     .contact img{
-        display: none;
+        aspect-ratio: 1 / 2;
+        position: absolute;
+        opacity: .2;
+        mix-blend-mode: difference;
     }
 
 
