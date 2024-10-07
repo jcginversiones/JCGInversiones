@@ -78,6 +78,7 @@
     .contact img{
         aspect-ratio: 1 / 2;
         position: absolute;
+        bottom: 20px;
         opacity: .2;
         mix-blend-mode: difference;
     }
