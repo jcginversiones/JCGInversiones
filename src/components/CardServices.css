@@ -21,11 +21,28 @@
 }
 
 
-.cardServices h3{
+.cServiceHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+
+.cServiceHeader img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.cServiceHeader h3{
     color: var(--white);
     font-size: xx-large;
     text-transform: uppercase;
 }
+
 
 
 .cardServices p{

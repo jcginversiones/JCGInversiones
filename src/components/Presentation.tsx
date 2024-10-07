@@ -7,13 +7,12 @@ interface PresentationProps {
 
 const Presentation : React.FC<PresentationProps> = ({id}) =>{
     return(
-        <section className='presentation' id={id}>
-            {/* <img src="https://nestlewoodrealty.com/wp-content/uploads/bb-plugin/cache/Mike-Boris-Headshot-BW-circle-01ba2711a3436a70d133a99e4e8bf8a8-xrkymhae0bo4.jpg" alt="" /> */}
+        <section className='presentation' id={id}>            
             <img src="/profile.png" alt="Trader a cargo Juan Giacovino" />
             <article className='pProfile'>
                 <div className='pTrader'>
                     <p>- Asesor Financiero -</p>
-                    <h2 className='pName'>Juan Cruz Giavovino</h2>
+                    <h2 className='pName'>Juan Cruz Giacovino</h2>
                 </div>
 
                 <p className='pDescription'>

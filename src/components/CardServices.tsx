@@ -4,6 +4,7 @@ import './CardServices.css';
 
 interface CardServicesProps{
     title:string;
+    img:string;
     description:string;
     filePath1:string;
     fileName1:string;
@@ -11,7 +12,7 @@ interface CardServicesProps{
     fileName2:string;
 }
 
-const CardServices : React.FC<CardServicesProps> = ({title, description,filePath1,fileName1, filePath2, fileName2}) =>{
+const CardServices : React.FC<CardServicesProps> = ({title, img, description,filePath1,fileName1, filePath2, fileName2}) =>{
 
     /* Primer Boton */
     const handleDownload1 = () => {
@@ -56,7 +57,10 @@ const CardServices : React.FC<CardServicesProps> = ({title, description,filePath
 
     return(
         <article className="cardServices">
-            <h3>{title}</h3>
+            <header className='cServiceHeader'>
+                <img src={img} alt="Logo de Broker" />
+                <h3>{title}</h3>
+            </header>
             <p>{description}</p>
             <div className='csButtons'>
                 <ButtonAction colorSet={1} text='Abrir Cuenta' fn={handleDownload1}/>

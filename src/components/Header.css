@@ -76,8 +76,9 @@
     align-items: center;
     justify-content: center;
     font-weight: 600;
+    font-size: x-small;
     text-align: center;
-    color: var(--color3);
+    color: var(--whiteTransparent);
 }
 
 .headerFinalText span{
@@ -127,7 +128,6 @@
     .headerFinalText{
         flex-direction: column;
         text-wrap: balance;
-        font-size: smaller;
         line-height: normal;
     }
 

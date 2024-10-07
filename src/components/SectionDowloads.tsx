@@ -17,7 +17,8 @@ const SectionDowloads : React.FC = () =>{
             <div className='sDPart2'>
                 <CardServices 
                     title='IOL' 
-                    description='Fundada en mayo del 2000 y en 2018 fue adquirida por el Grupo Supervielle,Agente de Liquidación y Compensación Integral (ALyCI) Nº 273/CNV,Agente Colocador y Distribuidor Integral de Fondos Comunes de Inversión (ACyDI FCI) Nº 1/CNV' 
+                    img='/IOLWEB.png'
+                    description='Fundada en mayo del 2000, en 2018 fue adquirida por el Grupo Supervielle. Agente de Liquidación y Compensación Integral (ALyCI) Nº 273/CNV, Agente Colocador y Distribuidor Integral de Fondos Comunes de Inversión (ACyDI FCI) Nº 1/CNV' 
                     filePath1='/APERTURA IOL.pdf' 
                     fileName1='IOL APERTURA'
                     filePath2='/REASIGNACION IOL.pdf'
@@ -25,8 +26,9 @@ const SectionDowloads : React.FC = () =>{
                     />                 
                 
                 <CardServices
-                title='Balanz' 
-                description='Mas de 20 años de experiencia de operador como Agente de Liquidación y Compensación en los mercados BYMA, MAE, MAV y Rofex. Las especies que se operan,son custodiadas por Caja de Valores S.A.' 
+                title='Balanz'
+                img='/BALANZWEB.png' 
+                description='Mas de 20 años de experiencia de operador como Agente de Liquidación y Compensación en los mercados BYMA, MAE, MAV y Rofex. Las especies que se operan, son custodiadas por Caja de Valores S.A.' 
                 filePath1='/APERTURA BALANZ.pdf' 
                 fileName1='BALANZ APERTURA'
                 filePath2='/REASIGNACION BALANZ.pdf'
