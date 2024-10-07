@@ -11,7 +11,7 @@ const Presentation : React.FC<PresentationProps> = ({id}) =>{
             <img src="/profile.png" alt="Trader a cargo Juan Giacovino" />
             <article className='pProfile'>
                 <div className='pTrader'>
-                    <p>- Asesor Financiero -</p>
+                    <p>- Asesor Financiero Agente Productor CNV N°2145-</p>
                     <h2 className='pName'>Juan Cruz Giacovino</h2>
                 </div>
 

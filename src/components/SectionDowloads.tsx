@@ -21,7 +21,7 @@ const SectionDowloads : React.FC = () =>{
                     description='Fundada en mayo del 2000, en 2018 fue adquirida por el Grupo Supervielle. Agente de Liquidación y Compensación Integral (ALyCI) Nº 273/CNV, Agente Colocador y Distribuidor Integral de Fondos Comunes de Inversión (ACyDI FCI) Nº 1/CNV' 
                     filePath1='/APERTURA IOL.pdf' 
                     fileName1='IOL APERTURA'
-                    filePath2='/REASIGNACION IOL.pdf'
+                    filePath2='/REASIGNACION  IOL.pdf'
                     fileName2='IOL REASIGNACION'
                     />                 
                 
