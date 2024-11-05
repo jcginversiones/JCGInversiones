@@ -10,9 +10,10 @@ interface CardServicesProps{
     fileName1:string;
     filePath2:string;
     fileName2:string;
+    to?:string;
 }
 
-const CardServices : React.FC<CardServicesProps> = ({title, img, description,filePath1,fileName1, filePath2, fileName2}) =>{
+const CardServices : React.FC<CardServicesProps> = ({title, img, description,filePath1,fileName1, filePath2, fileName2, to}) =>{
 
     /* Primer Boton */
     const handleDownload1 = () => {
@@ -64,7 +65,11 @@ const CardServices : React.FC<CardServicesProps> = ({title, img, description,fil
             <p>{description}</p>
             <div className='csButtons'>
                 <ButtonAction colorSet={1} text='Abrir Cuenta' fn={handleDownload1}/>
-                <ButtonAction colorSet={3} text='Ya tengo Cuenta' fn={handleDownload2}/>
+                { to? 
+                    (<ButtonAction colorSet={3} text='Ya tengo Cuenta' to={to} />)
+                    :
+                    (<ButtonAction colorSet={3} text='Ya tengo Cuenta' fn={handleDownload2}/>)
+                }
             </div>
 
 
