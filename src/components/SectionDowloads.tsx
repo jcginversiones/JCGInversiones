@@ -33,6 +33,7 @@ const SectionDowloads : React.FC = () =>{
                 fileName1='BALANZ APERTURA'
                 filePath2='/REASIGNACION BALANZ.pdf'
                 fileName2='BALANZ REASIGNACION'
+                to='https://wa.me/541126778251?text=Hola%20Juan,%20ya%20tengo%20cuenta%20en%20Balanz%20y%20quiero%20que%20seas%20mi%20asesor'
                 />
             </div>
         </section>
