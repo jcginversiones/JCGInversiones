@@ -1,4 +1,3 @@
-import ButtonAction from './ButtonAction';
 import './Nav.css';
 
 const Nav : React.FC = () =>{
