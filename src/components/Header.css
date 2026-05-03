@@ -7,7 +7,6 @@
     justify-content: center;
 }
 
-
 .headerContent{
     width: 100%;
     height: 80%;
@@ -17,7 +16,6 @@
     gap: 2rem;
 }
 
-
 .headerSection1{
     display: flex;
     flex-direction: column;
@@ -26,7 +24,6 @@
     z-index: 5;
 }
 
-
 .hSText1{
     letter-spacing: .2rem;
     color: var(--whiteTransparent);
@@ -34,7 +31,6 @@
     line-height: normal;
     text-wrap: nowrap;
 }
-
 
 .hSTittle{
     font-weight: 800;
@@ -50,12 +46,64 @@
     color: var(--whiteTransparent);
 }
 
-
 .hSButtons{
     display: flex;
     align-items: center;
     gap: 1rem;
     padding: 1rem .5rem;
+}
+
+/* Ecosystem quick access buttons */
+.hSEcosystem {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0rem 0.5rem;
+    flex-wrap: wrap;
+}
+
+.hSEcoBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.8rem;
+    border-radius: var(--border);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.04rem;
+    text-decoration: none;
+    transition: .3s ease-out;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+}
+
+.hSEcoDash {
+    color: var(--white);
+    background-color: rgba(162, 0, 33, 0.2);
+    border-color: rgba(162, 0, 33, 0.5);
+}
+.hSEcoDash:hover {
+    background-color: var(--color1);
+    border-color: var(--color1);
+}
+
+.hSEcoPlatform {
+    color: var(--whiteTransparent);
+    border-color: rgba(243,244,248,0.2);
+}
+.hSEcoPlatform:hover {
+    color: var(--white);
+    border-color: rgba(243,244,248,0.6);
+}
+
+.hSEcoStrategic {
+    color: #D4A017;
+    border-color: rgba(212, 160, 23, 0.4);
+}
+.hSEcoStrategic:hover {
+    background-color: #D4A017;
+    color: #0d0d0d;
+    border-color: #D4A017;
 }
 
 .headerSection2{
@@ -69,7 +117,6 @@
     mask-image: linear-gradient(to left, black 60%, transparent);
 }
 
-
 .headerFinalText{
     width: 100%;
     display: flex;
@@ -81,20 +128,11 @@
     color: var(--whiteTransparent);
 }
 
-.headerFinalText span{
-    padding-left: .2rem;
-    font-style: italic;
-    font-weight: 800;
-    color: var(--color3);
-}
-
-
 @media only screen and (max-width: 850px){
     .header{
         padding: 0rem 1rem;
         justify-content: space-evenly;
     }
-
 
     .headerContent{
         flex-direction: column-reverse;
@@ -116,7 +154,6 @@
         padding: 0rem .5rem;
     }
 
-
     .hSText2{
         font-size: small;
         text-wrap: balance;
@@ -124,16 +161,23 @@
         padding: 0rem .5rem;
     }
 
-
     .headerFinalText{
         flex-direction: column;
         text-wrap: balance;
         line-height: normal;
     }
 
-
     .hSButtons {
         padding: 1rem .5rem;
     }
-}
 
+    .hSEcosystem {
+        padding: 0rem 0.5rem;
+        gap: 0.4rem;
+    }
+
+    .hSEcoBtn {
+        font-size: 0.65rem;
+        padding: 0.3rem 0.6rem;
+    }
+}

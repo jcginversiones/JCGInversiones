@@ -6,76 +6,164 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 2rem 0rem 2rem;
+    padding: 1rem 2rem;
     z-index: 200;
-    background-color: var(--black);
+    background-color: rgba(13, 13, 13, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(162, 0, 33, 0.2);
 }
-
-
 
 .navSupContainer{
     max-width: 1440px;
-    margin: 0 auto; /* Centra el contenedor dentro del nav */
+    margin: 0 auto;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 1rem;
 }
-
-
 
 .navSupContainer header a{
     display: flex;
     align-items: center;
-    gap: .3rem;
+    gap: .6rem;
+    text-decoration: none;
 }
 
+.navSupContainer header img {
+    border-radius: 6px;
+}
+
+.navBrand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
+    gap: 2px;
+}
+
+.navBrandTitle {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.03rem;
+}
+
+.navBrandSub {
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: var(--color1);
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+}
 
 .ulNS{
-    display:flex;
+    display: flex;
     align-items: center;
     justify-self: center;
-    gap: 1rem;   
+    gap: 1.5rem;   
     list-style: none;
 }
 
-
-.ulNS li{
+.ulNS li a {
     color: var(--whiteTransparent);
     text-decoration: none;
     font-weight: 500;
-    border: none;
-    border-bottom: thick solid transparent;
-    border-radius: var(--border);
+    font-size: 0.9rem;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
     transition: .3s ease-out;
 }
 
-
-
-.ulNS li:hover{
+.ulNS li a:hover{
     border-color: var(--color1);
     color: var(--white);
 }
 
+/* Botones de acciones del nav */
+.navActions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
 
+.navBtnStrategic,
+.navBtnDashboard,
+.navBtnPlatform {
+    padding: 0.4rem 0.85rem;
+    border-radius: var(--border);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04rem;
+    text-decoration: none;
+    transition: .3s ease-out;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+/* Dorado para Strategic */
+.navBtnStrategic {
+    color: #D4A017;
+    border: 1.5px solid #D4A017;
+    background-color: transparent;
+}
+.navBtnStrategic:hover {
+    background-color: #D4A017;
+    color: #0d0d0d;
+}
+
+/* Rojo para Dashboard */
+.navBtnDashboard {
+    background-color: var(--color1Transparent);
+    color: var(--white);
+    border: 1.5px solid var(--color1);
+}
+.navBtnDashboard:hover {
+    background-color: var(--color1);
+}
+
+/* Outline blanco para Plataforma */
+.navBtnPlatform {
+    color: var(--whiteTransparent);
+    border: 1.5px solid rgba(243,244,248,0.25);
+    background-color: transparent;
+}
+.navBtnPlatform:hover {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+@media only screen and (max-width: 1100px) {
+    .navBtnStrategic {
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 850px){
     .navSup{
-        padding: 1rem 0rem;
+        padding: 0.8rem 1rem;
     }
     
     .navSupContainer{
-        justify-content: center;
-        padding:0rem;
+        justify-content: space-between;
+        padding: 0rem;
     }
 
     .navSupContainer ul{
         display: none;
     }
 
-    .navSupContainer .buttonAction{
+    .navActions {
+        gap: 0.4rem;
+    }
+
+    .navBtnStrategic,
+    .navBtnDashboard {
         display: none;
     }
+
+    .navBtnPlatform {
+        font-size: 0.7rem;
+        padding: 0.35rem 0.7rem;
+    }
 }
-
-
