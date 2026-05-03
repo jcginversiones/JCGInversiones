@@ -1,0 +1,248 @@
+.planesServices {
+    width: 100%;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.planesHeader {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.planesTag {
+    letter-spacing: 0.2rem;
+    color: var(--color1);
+    font-size: small;
+    font-weight: 700;
+}
+
+.planesTittle {
+    font-size: xx-large;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.planesSubtitle {
+    color: var(--whiteTransparent);
+    font-size: 0.95rem;
+}
+
+/* Grid de planes */
+.planesGrid {
+    width: 100%;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+/* Card base */
+.planCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color3);
+    background-color: var(--color2);
+    transition: .3s ease-out;
+    gap: 1.5rem;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.planCard:hover {
+    transform: translateY(-4px);
+}
+
+/* Card premium destacada */
+.planPremium {
+    border-color: var(--color1);
+    background: linear-gradient(145deg, var(--color2) 60%, rgba(162, 0, 33, 0.08) 100%);
+    position: relative;
+}
+
+.planCardTop {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+/* Badge */
+.planBadge {
+    display: inline-block;
+    padding: 0.25rem 0.7rem;
+    border-radius: 2rem;
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.planBadgeFree {
+    background-color: rgba(243, 244, 248, 0.1);
+    color: var(--whiteTransparent);
+    border: 1px solid rgba(243, 244, 248, 0.2);
+}
+
+.planBadgePremium {
+    background-color: rgba(162, 0, 33, 0.2);
+    color: var(--color1);
+    border: 1px solid rgba(162, 0, 33, 0.4);
+}
+
+.planName {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--white);
+}
+
+/* Precio */
+.planPrice {
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+}
+
+.planPriceAmount {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1;
+}
+
+.planPricePeriod {
+    color: var(--whiteTransparent);
+    font-size: 0.9rem;
+}
+
+.planPriceAlt {
+    font-size: 0.8rem;
+    color: var(--whiteTransparent);
+    margin-top: -0.4rem;
+}
+
+.planSaving {
+    color: #4ade80;
+    font-weight: 600;
+}
+
+.planDesc {
+    color: var(--whiteTransparent);
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+/* Features */
+.planFeatures {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    flex: 1;
+}
+
+.planFeatures li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    font-size: 0.85rem;
+    color: var(--whiteTransparent);
+    line-height: 1.4;
+}
+
+.planCheck {
+    color: rgba(243, 244, 248, 0.4);
+    font-weight: 800;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.planCheckPremium {
+    color: var(--color1);
+}
+
+/* Botones */
+.planActions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.planBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 1.2rem;
+    border-radius: var(--border);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .3s ease-out;
+    text-align: center;
+}
+
+.planBtn:active {
+    transform: scale(0.97);
+}
+
+.planBtnFree {
+    background-color: var(--color2);
+    border: 1.5px solid rgba(243, 244, 248, 0.3);
+    color: var(--white);
+}
+.planBtnFree:hover {
+    border-color: var(--white);
+    background-color: rgba(243,244,248,0.08);
+}
+
+.planBtnPremium {
+    background-color: var(--color1);
+    color: var(--white);
+    border: 1.5px solid var(--color1);
+}
+.planBtnPremium:hover {
+    background-color: #c0002a;
+}
+
+.planBtnSecondary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border);
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--whiteTransparent);
+    text-decoration: none;
+    transition: .3s ease-out;
+    text-align: center;
+}
+.planBtnSecondary:hover {
+    color: var(--white);
+}
+
+
+@media only screen and (max-width: 750px) {
+    .planesGrid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+    }
+
+    .planesTittle {
+        font-size: x-large;
+        text-wrap: balance;
+    }
+
+    .planesServices {
+        padding: 2rem 1rem;
+    }
+}
