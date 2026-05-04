@@ -36,11 +36,7 @@
 .contentIvite h3{
     line-height: normal;
     font-size: xx-large;
-    
 }
-
-
-
 
 
 .contactContainer p{
@@ -57,10 +53,41 @@
 .cButtons{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
+
+/* Botón Agendar Reunión — llamativo */
+.btnAgendar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.4rem;
+    border-radius: var(--border);
+    font-size: 0.95rem;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 0.03rem;
+    color: #0d0d0d;
+    background: linear-gradient(135deg, #e8b320, #D4A017);
+    border: none;
+    box-shadow: 0 4px 20px rgba(212, 160, 23, 0.35);
+    transition: .3s ease-out;
+    white-space: nowrap;
+}
+
+.btnAgendar:hover {
+    background: linear-gradient(135deg, #f0c030, #e8b320);
+    box-shadow: 0 6px 28px rgba(212, 160, 23, 0.55);
+    transform: translateY(-2px);
+    color: #0d0d0d;
+}
+
+.btnAgendar:active {
+    transform: scale(0.97);
+}
 
 
 @media only screen and (max-width: 850px){
@@ -105,7 +132,9 @@
     .redesData span{
         display: none;
     }
- 
+
+    .btnAgendar {
+        font-size: 0.85rem;
+        padding: 0.55rem 1.1rem;
+    }
 }
-
-
