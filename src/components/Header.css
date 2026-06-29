@@ -14,22 +14,43 @@
 /* ── FINANCIERO ── */
 .heroFin {
     background: #0d0d0d;
-    padding: 40px 44px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     overflow: hidden;
 }
 
-.heroFinInner {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    z-index: 2;
-    max-width: 340px;
+.heroFinBg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
 }
 
+.heroFinBg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.28;
+    display: block;
+}
+
+.heroFinOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(13,13,13,0.97) 0%, rgba(13,13,13,0.55) 45%, rgba(13,13,13,0.15) 100%);
+}
+
+.heroFinInner {
+    position: relative;
+    z-index: 2;
+    padding: 40px 44px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ── EYEBROW ── */
 .heroEyebrow {
     display: flex;
     align-items: center;
@@ -39,7 +60,7 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     color: rgba(243,244,248,0.4);
-    margin-bottom: 14px;
+    margin-bottom: 16px;
 }
 
 .eyebrowDot {
@@ -52,13 +73,14 @@
 .dotRed { background: #a20021; }
 .dotGray { background: #666; }
 
+/* ── TITULOS ── */
 .heroTitle {
-    font-size: clamp(24px, 2.5vw, 38px);
+    font-size: clamp(32px, 3.2vw, 52px);
     font-weight: 800;
-    line-height: 1.08;
-    letter-spacing: -0.02em;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
     color: #F3F4F8;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .heroTitleEm {
@@ -67,21 +89,23 @@
 }
 
 .heroTitleRE {
-    font-size: clamp(22px, 2.2vw, 34px);
+    font-size: clamp(30px, 3vw, 48px);
     font-weight: 800;
-    line-height: 1.08;
-    letter-spacing: -0.02em;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
     color: #F3F4F8;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .heroSub {
     font-size: 13px;
     line-height: 1.65;
     color: rgba(243,244,248,0.5);
-    margin-bottom: 20px;
+    margin-bottom: 22px;
+    max-width: 340px;
 }
 
+/* ── BOTONES ── */
 .heroMainBtns {
     display: flex;
     gap: 8px;
@@ -90,10 +114,10 @@
 }
 
 .heroBtnRed {
-    padding: 9px 20px;
+    padding: 10px 22px;
     background: #a20021;
     color: #F3F4F8;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     text-decoration: none;
     border-radius: 2px;
@@ -102,9 +126,9 @@
 .heroBtnRed:hover { background: #c0002a; }
 
 .heroBtnGhost {
-    padding: 8px 16px;
+    padding: 9px 18px;
     color: rgba(243,244,248,0.55);
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     text-decoration: none;
     border: 1px solid rgba(243,244,248,0.18);
@@ -114,10 +138,10 @@
 .heroBtnGhost:hover { color: #F3F4F8; border-color: rgba(243,244,248,0.4); }
 
 .heroBtnGhostRE {
-    padding: 9px 20px;
+    padding: 10px 22px;
     background: rgba(255,255,255,0.1);
     color: #F3F4F8;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     text-decoration: none;
     border: 1px solid rgba(255,255,255,0.2);
@@ -127,9 +151,9 @@
 .heroBtnGhostRE:hover { background: rgba(255,255,255,0.18); }
 
 .heroBtnGold {
-    padding: 8px 16px;
+    padding: 9px 18px;
     color: #D4A017;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     text-decoration: none;
     border: 1px solid rgba(212,160,23,0.4);
@@ -138,6 +162,7 @@
 }
 .heroBtnGold:hover { background: #D4A017; color: #0d0d0d; }
 
+/* ── ECO LINKS ── */
 .heroEco {
     display: flex;
     gap: 6px;
@@ -170,24 +195,6 @@
     text-transform: uppercase;
     color: rgba(243,244,248,0.18);
 }
-
-/* ── VELAS ── */
-.candlesDecor {
-    display: flex;
-    align-items: flex-end;
-    gap: 8px;
-    opacity: 0.18;
-    pointer-events: none;
-    align-self: flex-end;
-    padding-bottom: 40px;
-}
-
-.cdl { display: flex; flex-direction: column; align-items: center; gap: 2px; }
-.cdlW { width: 2px; border-radius: 1px; }
-.cdlB { width: 18px; border-radius: 2px; }
-.cdlRed { background: #a20021; }
-.cdlGray { background: #555; }
-.cdlWh { background: rgba(243,244,248,0.6); }
 
 /* ── DIVISOR ── */
 .heroDivider {
@@ -235,35 +242,6 @@
     flex-direction: column;
 }
 
-/* ── ANCHOR BAR ── */
-.heroAnchor {
-    width: 100%;
-    background: #0f0f0f;
-    border-top: 1px solid rgba(255,255,255,0.05);
-    padding: 10px 44px;
-    display: flex;
-    align-items: center;
-    gap: 14px;
-}
-
-.anchorLink {
-    font-size: 9px;
-    font-weight: 700;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-    color: rgba(243,244,248,0.28);
-    text-decoration: none;
-    transition: .2s;
-    border-bottom: 1px solid transparent;
-    padding-bottom: 1px;
-}
-
-.anchorLink:hover { color: rgba(243,244,248,0.6); }
-.anchorActive { color: #a20021; border-bottom-color: #a20021; }
-.anchorGold { color: rgba(212,160,23,0.6); border-bottom-color: rgba(212,160,23,0.4); }
-
-.anchorSep { color: rgba(243,244,248,0.1); font-size: 11px; }
-
 /* ── RESPONSIVE ── */
 @media only screen and (max-width: 850px) {
     .heroSplit {
@@ -274,25 +252,17 @@
     }
 
     .heroFin {
-        padding: 72px 24px 36px;
-        flex-direction: column;
-        align-items: flex-start;
+        min-height: 65vh;
     }
 
-    .heroFinInner { max-width: 100%; }
-
-    .candlesDecor { display: none; }
+    .heroFinInner {
+        padding: 28px 24px;
+    }
 
     .heroRE { min-height: 65vh; }
 
     .heroREInner { padding: 28px 24px; }
 
-    .heroAnchor {
-        padding: 9px 24px;
-        flex-wrap: wrap;
-        gap: 8px;
-    }
-
-    .heroTitle { font-size: 28px; }
-    .heroTitleRE { font-size: 26px; }
+    .heroTitle { font-size: 30px; }
+    .heroTitleRE { font-size: 28px; }
 }
