@@ -1,0 +1,244 @@
+/* ── REAL ESTATE SECTION ── */
+.realEstate {
+    width: 100%;
+    padding: 80px 48px;
+    background: #161616;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.reHeader {
+    margin-bottom: 48px;
+    max-width: 600px;
+}
+
+.reEyebrow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(243,244,248,0.35);
+    margin-bottom: 14px;
+}
+
+.reEyebrowLine {
+    display: block;
+    width: 28px;
+    height: 1px;
+    background: #666;
+    flex-shrink: 0;
+}
+
+.reTitulo {
+    font-size: clamp(26px, 3vw, 40px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: var(--white);
+    margin-bottom: 14px;
+}
+
+.reSub {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(243,244,248,0.45);
+    max-width: 420px;
+}
+
+/* ── CARDS GRID ── */
+.reCardsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-bottom: 48px;
+}
+
+/* ── CARD ── */
+.reCard {
+    position: relative;
+    overflow: hidden;
+    background: #111;
+    cursor: pointer;
+}
+
+.reCardImg {
+    position: relative;
+    height: 340px;
+    overflow: hidden;
+}
+
+.reCardImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform .5s ease-out;
+    filter: grayscale(30%) brightness(0.7);
+}
+
+.reCard:hover .reCardImg img {
+    transform: scale(1.05);
+    filter: grayscale(0%) brightness(0.65);
+}
+
+.reCardOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(17,17,17,0.97) 0%,
+        rgba(17,17,17,0.5) 45%,
+        rgba(17,17,17,0.1) 100%
+    );
+}
+
+.reCardContent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.reCardTag {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: rgba(243,244,248,0.4);
+}
+
+.reCardTitle {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+    color: var(--white);
+}
+
+.reCardDesc {
+    font-size: 12px;
+    line-height: 1.6;
+    color: rgba(243,244,248,0.5);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease-out, opacity .3s ease-out;
+    opacity: 0;
+}
+
+.reCard:hover .reCardDesc {
+    max-height: 80px;
+    opacity: 1;
+}
+
+.reCardBtn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: rgba(243,244,248,0.1);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid rgba(243,244,248,0.2);
+    border-radius: 2px;
+    width: fit-content;
+    transition: .2s ease-out;
+    opacity: 0;
+    transform: translateY(8px);
+}
+
+.reCard:hover .reCardBtn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ── CTA ── */
+.reCTA {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.07);
+    flex-wrap: wrap;
+}
+
+.reCTAText {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(243,244,248,0.6);
+    max-width: 400px;
+}
+
+.reCTABtns {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.reBtnGold {
+    padding: 11px 24px;
+    background: linear-gradient(135deg, #e8b320, #D4A017);
+    color: #0d0d0d;
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: .2s ease-out;
+}
+
+.reBtnGold:hover {
+    background: linear-gradient(135deg, #f0c030, #e8b320);
+    transform: translateY(-1px);
+}
+
+.reBtnWpp {
+    padding: 10px 20px;
+    background: transparent;
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid rgba(162,0,33,0.5);
+    border-radius: 2px;
+    background: rgba(162,0,33,0.12);
+    transition: .2s ease-out;
+}
+
+.reBtnWpp:hover { background: var(--color1); }
+
+/* ── RESPONSIVE ── */
+@media only screen and (max-width: 850px) {
+    .realEstate {
+        padding: 60px 24px;
+    }
+
+    .reCardsGrid {
+        grid-template-columns: 1fr;
+        gap: 2px;
+    }
+
+    .reCardImg { height: 280px; }
+
+    .reCardDesc {
+        max-height: 80px;
+        opacity: 1;
+    }
+
+    .reCardBtn {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .reCTA {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
