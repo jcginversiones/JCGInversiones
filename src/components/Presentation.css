@@ -1,116 +1,254 @@
-.presentation{
-    width: 100%;    
-    min-height: 100vh;
+/* ── NOSOTROS ── */
+.nosotros {
+    width: 100%;
+    padding: 80px 48px;
+    background: #0f0f0f;
+}
+
+.nosotrosHeader {
+    margin-bottom: 48px;
+}
+
+.nosotrosEyebrow {
     display: flex;
     align-items: center;
-    padding: 2rem;    
+    gap: 12px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(243,244,248,0.35);
+    margin-bottom: 14px;
 }
 
-.presentation img{
-    max-width: 40rem;
-    aspect-ratio: 1 / 1;
-    mask-image: linear-gradient(180deg, #fff 41%, transparent 90%);
+.eyebrowLine {
+    display: block;
+    width: 28px;
+    height: 1px;
+    background: var(--color1);
+    flex-shrink: 0;
 }
 
+.nosotrosTitulo {
+    font-size: clamp(24px, 2.8vw, 38px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: var(--white);
+    max-width: 480px;
+}
 
-.pProfile{
+/* ── GRID ── */
+.nosotrosGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+}
+
+/* ── CARD BASE ── */
+.teamCard {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 0;
+    min-height: 360px;
     position: relative;
+    overflow: hidden;
+}
+
+.teamCardFinanciero {
+    background: #141414;
+    border: 1px solid rgba(162,0,33,0.15);
+}
+
+.teamCardRE {
+    background: #161616;
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* ── IMAGEN ── */
+.teamCardImgWrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.teamCardImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    filter: grayscale(20%);
+    transition: .4s ease-out;
+}
+
+.teamCard:hover .teamCardImg {
+    filter: grayscale(0%);
+    transform: scale(1.03);
+}
+
+.teamCardImgOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, transparent 60%, #141414 100%);
+}
+
+.teamCardRE .teamCardImgOverlay {
+    background: linear-gradient(to right, transparent 60%, #161616 100%);
+}
+
+/* ── BODY ── */
+.teamCardBody {
+    padding: 32px 28px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
-    padding-left: 2rem;
+    gap: 10px;
 }
 
-
-.pTrader{
-    position: absolute;
-    top: -70px;
-    left: -110px;    
-}
-
-
-.pTrader p{
-    letter-spacing: .2rem;
-    color: var(--color1);
-    font-size: small;
-    line-height: normal;
-    font-weight: 800;
-    text-wrap: balance;
-    text-align: left;
-}
-
-
-.pName{
-    font-size: xxx-large;
-    line-height: 3rem; 
-}
-
-.pDescription{
-    margin-top: 2rem;
-    color: var(--whiteTransparent);
-    line-height: normal;
-}
-
-
-.pDescription span{
-    font-weight: bolder;
-    text-wrap: pretty;
-    text-align: center;
-}
-
-.pRedes{
-    width: 100%;
-    margin-top: 1rem;
+/* ── ROLE ── */
+.teamCardRole {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 1rem;
+    gap: 7px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
 }
 
+.teamCardRoleRed { color: var(--color1); }
+.teamCardRoleGray { color: #777; }
 
-.pRedItem{
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color: transparent;
-    border: none;
+.roleDot {
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.roleDotRed { background: var(--color1); }
+.roleDotGray { background: #666; }
+
+/* ── NAME ── */
+.teamCardName {
+    font-size: clamp(22px, 2vw, 28px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: var(--white);
+}
+
+/* ── TITLE ── */
+.teamCardTitle {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: rgba(243,244,248,0.4);
+    text-transform: uppercase;
+}
+
+/* ── DESC ── */
+.teamCardDesc {
+    font-size: 13px;
+    line-height: 1.65;
+    color: rgba(243,244,248,0.5);
+    max-width: 300px;
+}
+
+/* ── LINKS ── */
+.teamCardLinks {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 4px;
+    flex-wrap: wrap;
+}
+
+.teamSocial {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid rgba(243,244,248,0.15);
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: .3s ease-out;
+    color: rgba(243,244,248,0.5);
+    text-decoration: none;
+    transition: .2s ease-out;
 }
 
-
-.pRedItem:hover{
-    background-color:var(--color1);
+.teamSocial:hover {
+    background: var(--color1);
+    border-color: var(--color1);
+    color: var(--white);
 }
 
-
-
-@media only screen and (max-width: 850px){
-    .presentation{
-        position: relative;
-        padding: 0rem;
-    }
-
-
-    .pProfile{
-        position: absolute;
-        padding: 1rem;
-    }
-
-
-    .pTrader{
-        position: static;
-    }
-
-
-    .presentation img {
-        mask-image: linear-gradient(180deg, #fff 50%, transparent 100%);
-        position: absolute;
-        left: 0px;
-    }
+.teamBtnContact {
+    padding: 8px 16px;
+    background: var(--color1);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: .2s ease-out;
+    margin-left: 4px;
 }
 
+.teamBtnContact:hover { background: #c0002a; }
 
+.teamBtnContactGold {
+    padding: 8px 16px;
+    background: transparent;
+    color: #D4A017;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid rgba(212,160,23,0.4);
+    border-radius: 2px;
+    transition: .2s ease-out;
+}
+
+.teamBtnContactGold:hover {
+    background: #D4A017;
+    color: #0d0d0d;
+}
+
+/* ── RESPONSIVE ── */
+@media only screen and (max-width: 900px) {
+    .nosotros {
+        padding: 60px 24px;
+    }
+
+    .nosotrosGrid {
+        grid-template-columns: 1fr;
+        gap: 2px;
+    }
+
+    .teamCard {
+        grid-template-columns: 140px 1fr;
+        min-height: 240px;
+    }
+
+    .teamCardBody {
+        padding: 20px 18px;
+        gap: 8px;
+    }
+
+    .teamCardDesc { display: none; }
+}
+
+@media only screen and (max-width: 550px) {
+    .teamCard {
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px auto;
+    }
+
+    .teamCardImgOverlay {
+        background: linear-gradient(to top, #141414 20%, transparent 100%);
+    }
+
+    .teamCardRE .teamCardImgOverlay {
+        background: linear-gradient(to top, #161616 20%, transparent 100%);
+    }
+}
