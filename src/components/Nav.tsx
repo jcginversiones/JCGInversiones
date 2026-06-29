@@ -9,7 +9,7 @@ const Nav : React.FC = () =>{
                         <img src="/logo-new.png" alt="Logo JCG Inversiones" width={44} height={44} />
                         <div className='navBrand'>
                             <span className='navBrandTitle'>JCG Inversiones</span>
-                            <span className='navBrandSub'>Asesor Financiero</span>
+                            <span className='navBrandSub'>Asesoramiento Integral</span>
                         </div>
                     </a>
                 </header>
