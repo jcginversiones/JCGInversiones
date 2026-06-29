@@ -15,7 +15,7 @@ const Nav : React.FC = () =>{
                 </header>
 
                 <ul className='ulNS'>
-                    <li><a href="#presentation">Sobre Mi</a></li>
+                    <li><a href="#presentation">Nosotros</a></li>
                     <li><a href="#services">Servicios</a></li>
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
