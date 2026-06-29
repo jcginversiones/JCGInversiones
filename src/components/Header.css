@@ -1,183 +1,321 @@
-.header{
+/* ── HEADER WRAPPER ── */
+.header {
     width: 100%;
-    height: 100vh;
-    padding: 0rem 2rem;
+    padding-top: 64px;
+}
+
+/* ── HERO SPLIT — dos mitades lado a lado, altura exacta del viewport ── */
+.heroSplit {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    height: calc(100vh - 64px);
+    overflow: hidden;
+}
+
+/* ── LADO FINANCIERO ── */
+.heroFinanciero {
+    background: #0d0d0d;
+    padding: 40px 48px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
 }
 
-.headerContent{
-    width: 100%;
-    height: 80%;
+.heroFinContent {
+    position: relative;
+    z-index: 2;
+    max-width: 460px;
+}
+
+/* ── EYEBROW ── */
+.heroEyebrow {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 2rem;
-}
-
-.headerSection1{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    z-index: 5;
-}
-
-.hSText1{
-    letter-spacing: .2rem;
-    color: var(--whiteTransparent);
-    font-size: small;
-    line-height: normal;
-    text-wrap: nowrap;
-}
-
-.hSTittle{
-    font-weight: 800;
-    font-size: xxx-large;
-    line-height: normal;
-    width: 35rem; 
-}
-
-.hSText2{
-    font-weight: 600;
-    line-height: normal;
-    margin-top: 1rem;
-    color: var(--whiteTransparent);
-}
-
-.hSButtons{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem .5rem;
-}
-
-/* Ecosystem quick access buttons */
-.hSEcosystem {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    padding: 0rem 0.5rem;
-    flex-wrap: wrap;
-}
-
-.hSEcoBtn {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    padding: 0.35rem 0.8rem;
-    border-radius: var(--border);
-    font-size: 0.72rem;
-    font-weight: 600;
-    letter-spacing: 0.04rem;
-    text-decoration: none;
-    transition: .3s ease-out;
-    border: 1px solid transparent;
+    gap: 8px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
     text-transform: uppercase;
+    color: rgba(243,244,248,0.4);
+    margin-bottom: 16px;
 }
 
-.hSEcoDash {
-    color: var(--white);
-    background-color: rgba(162, 0, 33, 0.2);
-    border-color: rgba(162, 0, 33, 0.5);
-}
-.hSEcoDash:hover {
-    background-color: var(--color1);
-    border-color: var(--color1);
+.eyebrowDot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
 }
 
-.hSEcoPlatform {
-    color: var(--whiteTransparent);
-    border-color: rgba(243,244,248,0.2);
-}
-.hSEcoPlatform:hover {
-    color: var(--white);
-    border-color: rgba(243,244,248,0.6);
+.eyebrowDotRed { background: #a20021; }
+.eyebrowDotGray { background: #666; }
+
+/* ── TITULOS ── */
+.heroTitle {
+    font-size: clamp(26px, 2.8vw, 40px);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+    color: #F3F4F8;
 }
 
-.hSEcoStrategic {
-    color: #D4A017;
-    border-color: rgba(212, 160, 23, 0.4);
-}
-.hSEcoStrategic:hover {
-    background-color: #D4A017;
-    color: #0d0d0d;
-    border-color: #D4A017;
+.heroTitleAccent {
+    color: #a20021;
+    font-style: italic;
 }
 
-.headerSection2{
+.heroTitleRE {
+    font-size: clamp(24px, 2.5vw, 36px);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+    color: #F3F4F8;
+    position: relative;
+    z-index: 2;
+}
+
+.heroSub {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.65;
+    color: rgba(243,244,248,0.5);
+    margin-bottom: 22px;
+    max-width: 360px;
+}
+
+.heroSubRE {
+    position: relative;
+    z-index: 2;
+}
+
+/* ── BOTONES ── */
+.heroActions {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
 }
 
-.headerSection2 img {
-    width: 35rem;
-    mask-image: linear-gradient(to left, black 60%, transparent);
+.heroBtnPrimary {
+    padding: 10px 22px;
+    background: #a20021;
+    color: #F3F4F8;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: .25s ease-out;
 }
+.heroBtnPrimary:hover { background: #c0002a; }
 
-.headerFinalText{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.heroBtnGhost {
+    padding: 9px 18px;
+    color: rgba(243,244,248,0.55);
+    font-size: 13px;
     font-weight: 600;
-    font-size: x-small;
-    text-align: center;
-    color: var(--whiteTransparent);
+    text-decoration: none;
+    border: 1px solid rgba(243,244,248,0.18);
+    border-radius: 2px;
+    transition: .25s ease-out;
+}
+.heroBtnGhost:hover { color: #F3F4F8; border-color: rgba(243,244,248,0.45); }
+
+.heroBtnRE {
+    padding: 10px 22px;
+    background: rgba(255,255,255,0.1);
+    color: #F3F4F8;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 2px;
+    border: 1px solid rgba(255,255,255,0.22);
+    transition: .25s ease-out;
+}
+.heroBtnRE:hover { background: rgba(255,255,255,0.18); }
+
+.heroBtnGhostRE {
+    padding: 9px 18px;
+    color: #D4A017;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid rgba(212,160,23,0.4);
+    border-radius: 2px;
+    transition: .25s ease-out;
+}
+.heroBtnGhostRE:hover { background: #D4A017; color: #0d0d0d; }
+
+/* ── ECO LINKS ── */
+.heroEcoLinks {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 850px){
-    .header{
-        padding: 0rem 1rem;
-        justify-content: space-evenly;
+.ecoLink {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 4px 9px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    transition: .2s ease-out;
+}
+
+.ecoLinkRed { color: #F3F4F8; border-color: rgba(162,0,33,0.5); background: rgba(162,0,33,0.12); }
+.ecoLinkRed:hover { background: #a20021; }
+.ecoLinkGhost { color: rgba(243,244,248,0.38); border-color: rgba(243,244,248,0.14); }
+.ecoLinkGhost:hover { color: #F3F4F8; border-color: rgba(243,244,248,0.38); }
+.ecoLinkGold { color: #D4A017; border-color: rgba(212,160,23,0.33); }
+.ecoLinkGold:hover { background: #D4A017; color: #0d0d0d; }
+
+.heroCnv {
+    font-size: 9px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: rgba(243,244,248,0.18);
+}
+
+/* ── VELAS DECORATIVAS ── */
+.candlesDecor {
+    position: absolute;
+    right: 28px;
+    bottom: 40px;
+    display: flex;
+    align-items: flex-end;
+    gap: 9px;
+    opacity: 0.18;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.cdl { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.cdlW { width: 2px; background: rgba(243,244,248,0.4); border-radius: 1px; }
+.cdlWRed { background: #a20021; }
+.cdlB { width: 20px; border-radius: 2px; }
+.cdlRed { background: #a20021; }
+.cdlGray { background: #555; }
+.cdlWhite { background: rgba(243,244,248,0.7); }
+
+/* ── DIVISOR ── */
+.heroDivider {
+    background: rgba(243,244,248,0.07);
+    width: 1px;
+    align-self: stretch;
+}
+
+/* ── REAL ESTATE ── */
+.heroRealEstate {
+    background: #161616;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    height: 100%;
+}
+
+.heroREImg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.heroREImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    opacity: 0.35;
+}
+
+.heroREOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(22,22,22,0.97) 0%,
+        rgba(22,22,22,0.65) 40%,
+        rgba(22,22,22,0.15) 100%
+    );
+}
+
+.heroREContent {
+    position: relative;
+    z-index: 2;
+    padding: 40px 48px;
+}
+
+/* ── ANCHOR BAR ── */
+.heroAnchorBar {
+    width: 100%;
+    background: #0f0f0f;
+    border-top: 1px solid rgba(243,244,248,0.06);
+    padding: 11px 48px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.anchorLink {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: rgba(243,244,248,0.28);
+    text-decoration: none;
+    transition: .2s;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+}
+
+.anchorLink:hover { color: rgba(243,244,248,0.65); }
+.anchorLinkActive { color: #a20021; border-bottom-color: #a20021; }
+
+.anchorSep { color: rgba(243,244,248,0.13); font-size: 12px; }
+
+/* ── RESPONSIVE ── */
+@media only screen and (max-width: 850px) {
+    .heroSplit {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1px auto;
+        height: auto;
+        overflow: visible;
     }
 
-    .headerContent{
-        flex-direction: column-reverse;
+    .heroFinanciero {
+        padding: 72px 24px 40px;
+        height: auto;
     }
 
-    .headerSection2{
-        position: absolute;
-        top: 0px;
+    .heroFinContent { max-width: 100%; }
+
+    .heroRealEstate {
+        height: 70vh;
     }
 
-    .headerSection2 img{
-        mask-image: linear-gradient(to top, transparent -35%, black 90%);
+    .heroREContent { padding: 28px 24px; }
+
+    .heroAnchorBar {
+        padding: 10px 24px;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
-    .hSTittle {
-        text-wrap: pretty;
-        font-size: xx-large;
-        width: 100%;
-        padding: 0rem .5rem;
-    }
-
-    .hSText2{
-        font-size: small;
-        text-wrap: balance;
-        margin-top: 1rem;
-        padding: 0rem .5rem;
-    }
-
-    .headerFinalText{
-        flex-direction: column;
-        text-wrap: balance;
-        line-height: normal;
-    }
-
-    .hSButtons {
-        padding: 1rem .5rem;
-    }
-
-    .hSEcosystem {
-        padding: 0rem 0.5rem;
-        gap: 0.4rem;
-    }
-
-    .hSEcoBtn {
-        font-size: 0.65rem;
-        padding: 0.3rem 0.6rem;
-    }
+    .candlesDecor { display: none; }
+    .heroTitle { font-size: 30px; }
+    .heroTitleRE { font-size: 26px; }
 }
