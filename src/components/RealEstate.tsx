@@ -17,7 +17,7 @@ const RealEstate: React.FC = () => {
 
                 <article className='reCard'>
                     <div className='reCardImg'>
-                        <img src='/re-inversion.jpg' alt='Inversión Inmobiliaria' />
+                        <img src='/re-inversion.png' alt='Inversión Inmobiliaria' />
                         <div className='reCardOverlay'></div>
                     </div>
                     <div className='reCardContent'>
@@ -32,7 +32,7 @@ const RealEstate: React.FC = () => {
 
                 <article className='reCard'>
                     <div className='reCardImg'>
-                        <img src='/re-compra.jpg' alt='Compra de Departamentos' />
+                        <img src='/re-compra.png' alt='Compra de Departamentos' />
                         <div className='reCardOverlay'></div>
                     </div>
                     <div className='reCardContent'>
@@ -47,7 +47,7 @@ const RealEstate: React.FC = () => {
 
                 <article className='reCard'>
                     <div className='reCardImg'>
-                        <img src='/re-venta.jpg' alt='Venta de Propiedades' />
+                        <img src='/re-venta.png' alt='Venta de Propiedades' />
                         <div className='reCardOverlay'></div>
                     </div>
                     <div className='reCardContent'>
