@@ -64,7 +64,7 @@ const Header: React.FC<HeaderProps> = ({ id }) => {
                 {/* LADO REAL ESTATE */}
                 <div className='heroRealEstate'>
                     <div className='heroREImg'>
-                        <img src='/re-inversion.jpg' alt='Real Estate' />
+                        <img src='/re-inversion.png' alt='Real Estate' />
                         <div className='heroREOverlay'></div>
                     </div>
                     <div className='heroREContent'>
