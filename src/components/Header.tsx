@@ -11,6 +11,10 @@ const Header: React.FC<HeaderProps> = ({ id }) => {
 
                 {/* IZQUIERDA — FINANCIERO */}
                 <div className='heroFin'>
+                    <div className='heroFinBg'>
+                        <img src='/hero-market.png' alt='Mercado de capitales' />
+                        <div className='heroFinOverlay'></div>
+                    </div>
                     <div className='heroFinInner'>
                         <p className='heroEyebrow'>
                             <span className='eyebrowDot dotRed'></span>
@@ -38,14 +42,6 @@ const Header: React.FC<HeaderProps> = ({ id }) => {
                             <a href='https://jcgstrategic.com' target='_blank' rel='noopener noreferrer' className='ecoBtn ecoBtnGold'>JCG Strategic ↗</a>
                         </div>
                         <p className='heroCnv'>Asesor Financiero · Agente Productor CNV N°2145</p>
-                    </div>
-                    <div className='candlesDecor' aria-hidden='true'>
-                        <div className='cdl'><div className='cdlW cdlGray' style={{height:'10px'}}></div><div className='cdlB cdlGray' style={{height:'35px'}}></div><div className='cdlW cdlGray' style={{height:'7px'}}></div></div>
-                        <div className='cdl'><div className='cdlW cdlGray' style={{height:'12px'}}></div><div className='cdlB cdlGray' style={{height:'55px'}}></div><div className='cdlW cdlGray' style={{height:'8px'}}></div></div>
-                        <div className='cdl'><div className='cdlW cdlRed' style={{height:'14px'}}></div><div className='cdlB cdlRed' style={{height:'80px'}}></div><div className='cdlW cdlRed' style={{height:'10px'}}></div></div>
-                        <div className='cdl'><div className='cdlW cdlRed' style={{height:'16px'}}></div><div className='cdlB cdlRed' style={{height:'100px'}}></div><div className='cdlW cdlRed' style={{height:'12px'}}></div></div>
-                        <div className='cdl'><div className='cdlW cdlWh' style={{height:'11px'}}></div><div className='cdlB cdlWh' style={{height:'68px'}}></div><div className='cdlW cdlWh' style={{height:'8px'}}></div></div>
-                        <div className='cdl'><div className='cdlW cdlWh' style={{height:'9px'}}></div><div className='cdlB cdlWh' style={{height:'48px'}}></div><div className='cdlW cdlWh' style={{height:'6px'}}></div></div>
                     </div>
                 </div>
 
@@ -83,17 +79,6 @@ const Header: React.FC<HeaderProps> = ({ id }) => {
                 </div>
 
             </div>
-
-            {/* BARRA ANCLA */}
-            <nav className='heroAnchor'>
-                <a href='#services' className='anchorLink anchorActive'>Inversiones Financieras</a>
-                <span className='anchorSep'>/</span>
-                <a href='#realestate' className='anchorLink anchorGold'>Real Estate</a>
-                <span className='anchorSep'>/</span>
-                <a href='#presentation' className='anchorLink'>Nosotros</a>
-                <span className='anchorSep'>/</span>
-                <a href='#contact' className='anchorLink'>Contacto</a>
-            </nav>
         </header>
     );
 };
