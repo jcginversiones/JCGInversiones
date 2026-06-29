@@ -7,19 +7,21 @@
 .heroSplit {
     display: grid;
     grid-template-columns: 1fr 1px 1fr;
-    min-height: 100vh;
-    padding-top: 64px;
+    height: calc(100vh - 64px);
+    max-height: calc(100vh - 64px);
+    overflow: hidden;
 }
 
 /* ── FINANCIERO ── */
 .heroFinanciero {
     background: var(--black);
-    padding: 60px 48px 48px;
+    padding: 48px 48px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
     overflow: hidden;
+    height: 100%;
 }
 
 .heroFinContent {
@@ -240,7 +242,7 @@
     flex-direction: column;
     justify-content: flex-end;
     overflow: hidden;
-    min-height: calc(100vh - 64px);
+    height: 100%;
 }
 
 .heroREImg {
@@ -337,4 +339,26 @@
 
     .heroTitle { font-size: 32px; }
     .heroTitleRE { font-size: 28px; }
+}
+
+/* ── FIX VIEWPORT SPLIT ── */
+.header {
+    width: 100%;
+    padding-top: 64px;
+}
+
+.heroFinContent {
+    max-width: 480px;
+    overflow: hidden;
+}
+
+/* Reducir tamaño en pantallas donde no entra todo */
+@media only screen and (max-height: 700px) {
+    .heroTitle { font-size: 28px; }
+    .heroTitleRE { font-size: 24px; }
+    .heroSub { font-size: 12px; margin-bottom: 16px; }
+    .heroActions { margin-bottom: 12px; }
+    .heroEcoLinks { margin-bottom: 14px; }
+    .heroFinanciero { padding: 32px 40px 28px; }
+    .heroREContent { padding: 28px 40px; }
 }
