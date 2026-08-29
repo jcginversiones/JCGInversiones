@@ -1,26 +1,25 @@
-/* ── REAL ESTATE SECTION ── */
 .realEstate {
     width: 100%;
-    padding: 80px 48px;
+    padding: 72px 48px;
     background: #161616;
     border-top: 1px solid rgba(255,255,255,0.05);
 }
 
 .reHeader {
     margin-bottom: 48px;
-    max-width: 600px;
+    max-width: 640px;
 }
 
 .reEyebrow {
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: rgba(243,244,248,0.35);
-    margin-bottom: 14px;
+    margin-bottom: 16px;
 }
 
 .reEyebrowLine {
@@ -36,18 +35,17 @@
     font-weight: 800;
     letter-spacing: -0.02em;
     line-height: 1.1;
-    color: var(--white);
+    color: #F3F4F8;
     margin-bottom: 14px;
 }
 
 .reSub {
-    font-size: 14px;
-    line-height: 1.6;
-    color: rgba(243,244,248,0.45);
-    max-width: 420px;
+    font-size: 16px;
+    line-height: 1.65;
+    color: rgba(243,244,248,0.48);
+    max-width: 480px;
 }
 
-/* ── CARDS GRID ── */
 .reCardsGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -55,7 +53,6 @@
     margin-bottom: 48px;
 }
 
-/* ── CARD ── */
 .reCard {
     position: relative;
     overflow: hidden;
@@ -87,12 +84,7 @@
 .reCardOverlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        to top,
-        rgba(17,17,17,0.97) 0%,
-        rgba(17,17,17,0.5) 45%,
-        rgba(17,17,17,0.1) 100%
-    );
+    background: linear-gradient(to top, rgba(17,17,17,0.97) 0%, rgba(17,17,17,0.5) 45%, rgba(17,17,17,0.1) 100%);
 }
 
 .reCardContent {
@@ -100,10 +92,10 @@
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 28px 24px;
+    padding: 28px 26px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
 }
 
 .reCardTag {
@@ -119,13 +111,13 @@
     font-weight: 800;
     letter-spacing: -0.01em;
     line-height: 1.1;
-    color: var(--white);
+    color: #F3F4F8;
 }
 
 .reCardDesc {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.6;
-    color: rgba(243,244,248,0.5);
+    color: rgba(243,244,248,0.55);
     max-height: 0;
     overflow: hidden;
     transition: max-height .3s ease-out, opacity .3s ease-out;
@@ -139,10 +131,10 @@
 
 .reCardBtn {
     display: inline-block;
-    padding: 8px 16px;
+    padding: 9px 18px;
     background: rgba(243,244,248,0.1);
-    color: var(--white);
-    font-size: 12px;
+    color: #F3F4F8;
+    font-size: 13px;
     font-weight: 700;
     text-decoration: none;
     border: 1px solid rgba(243,244,248,0.2);
@@ -158,22 +150,21 @@
     transform: translateY(0);
 }
 
-/* ── CTA ── */
 .reCTA {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 24px;
     padding-top: 40px;
     border-top: 1px solid rgba(255,255,255,0.07);
     flex-wrap: wrap;
 }
 
 .reCTAText {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 600;
     color: rgba(243,244,248,0.6);
-    max-width: 400px;
+    max-width: 420px;
 }
 
 .reCTABtns {
@@ -184,61 +175,35 @@
 }
 
 .reBtnGold {
-    padding: 11px 24px;
+    padding: 12px 26px;
     background: linear-gradient(135deg, #e8b320, #D4A017);
     color: #0d0d0d;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 800;
     text-decoration: none;
     border-radius: 2px;
     transition: .2s ease-out;
 }
-
-.reBtnGold:hover {
-    background: linear-gradient(135deg, #f0c030, #e8b320);
-    transform: translateY(-1px);
-}
+.reBtnGold:hover { transform: translateY(-1px); }
 
 .reBtnWpp {
-    padding: 10px 20px;
+    padding: 11px 22px;
     background: transparent;
-    color: var(--white);
-    font-size: 13px;
+    color: #F3F4F8;
+    font-size: 14px;
     font-weight: 700;
     text-decoration: none;
     border: 1px solid rgba(162,0,33,0.5);
     border-radius: 2px;
     background: rgba(162,0,33,0.12);
-    transition: .2s ease-out;
+    transition: .2s;
 }
+.reBtnWpp:hover { background: #a20021; }
 
-.reBtnWpp:hover { background: var(--color1); }
-
-/* ── RESPONSIVE ── */
 @media only screen and (max-width: 850px) {
-    .realEstate {
-        padding: 60px 24px;
-    }
-
-    .reCardsGrid {
-        grid-template-columns: 1fr;
-        gap: 2px;
-    }
-
-    .reCardImg { height: 280px; }
-
-    .reCardDesc {
-        max-height: 80px;
-        opacity: 1;
-    }
-
-    .reCardBtn {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    .reCTA {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+    .realEstate { padding: 56px 24px; }
+    .reCardsGrid { grid-template-columns: 1fr; }
+    .reCardDesc { max-height: 80px; opacity: 1; }
+    .reCardBtn { opacity: 1; transform: translateY(0); }
+    .reCTA { flex-direction: column; align-items: flex-start; }
 }
