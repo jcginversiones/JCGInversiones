@@ -1,140 +1,153 @@
-.contact{
+.contact {
     width: 100%;
-    min-height: 70vh;
-    padding: 0rem 2rem;
-    display: flex;
-    align-items: normal;
-    justify-content: space-evenly;
+    padding: 72px 48px;
+    background: #0d0d0d;
+    border-top: 1px solid rgba(255,255,255,0.05);
 }
 
-
-
-.contact img{
-    width: 20rem;
-    aspect-ratio: 1 / 1;
-    mask-image: linear-gradient(180deg, #fff 10%, transparent 90%);
+.contactInner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+    max-width: 900px;
 }
 
-
-.contactContainer{ 
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-
-.contentIvite{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-
-.contentIvite h3{
-    line-height: normal;
-    font-size: xx-large;
-}
-
-
-.contactContainer p{
-    color: var(--whiteTransparent);
-    line-height: normal;
-}
-
-
-.cTextInvite{
-    margin: 1rem 0rem;
-}
-
-
-.cButtons{
+.contactEyebrow {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 1rem;
+    gap: 12px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #a20021;
+    margin-bottom: 14px;
+}
+
+.contactEyebrowLine {
+    display: block;
+    width: 28px;
+    height: 1px;
+    background: #a20021;
+    flex-shrink: 0;
+}
+
+.contactTitulo {
+    font-size: clamp(24px, 2.5vw, 34px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: #F3F4F8;
+    margin-bottom: 14px;
+}
+
+.contactDesc {
+    font-size: 13px;
+    color: rgba(243,244,248,0.5);
+    line-height: 1.7;
+    margin-bottom: 28px;
+    max-width: 380px;
+}
+
+.contactBtns {
+    display: flex;
+    gap: 8px;
     flex-wrap: wrap;
 }
 
-
-/* Botón Agendar Reunión — llamativo */
-.btnAgendar {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.6rem 1.4rem;
-    border-radius: var(--border);
-    font-size: 0.95rem;
+.contactBtnAgendar {
+    padding: 11px 24px;
+    background: linear-gradient(135deg, #e8b320, #D4A017);
+    color: #0d0d0d;
+    font-size: 13px;
     font-weight: 800;
     text-decoration: none;
-    letter-spacing: 0.03rem;
-    color: #0d0d0d;
-    background: linear-gradient(135deg, #e8b320, #D4A017);
-    border: none;
-    box-shadow: 0 4px 20px rgba(212, 160, 23, 0.35);
-    transition: .3s ease-out;
-    white-space: nowrap;
+    border-radius: 2px;
+    transition: .2s ease-out;
+    letter-spacing: 0.02em;
 }
-
-.btnAgendar:hover {
+.contactBtnAgendar:hover {
     background: linear-gradient(135deg, #f0c030, #e8b320);
-    box-shadow: 0 6px 28px rgba(212, 160, 23, 0.55);
-    transform: translateY(-2px);
-    color: #0d0d0d;
+    transform: translateY(-1px);
 }
 
-.btnAgendar:active {
-    transform: scale(0.97);
+.contactBtnWpp {
+    padding: 10px 20px;
+    background: rgba(162,0,33,0.12);
+    color: #F3F4F8;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid rgba(162,0,33,0.4);
+    border-radius: 2px;
+    transition: .2s ease-out;
+}
+.contactBtnWpp:hover { background: #a20021; }
+
+.contactBtnMail {
+    padding: 10px 20px;
+    color: rgba(243,244,248,0.5);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid rgba(243,244,248,0.15);
+    border-radius: 2px;
+    transition: .2s ease-out;
+}
+.contactBtnMail:hover { color: #F3F4F8; border-color: rgba(243,244,248,0.4); }
+
+/* REDES */
+.contactRedes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 8px;
 }
 
+.contactRedesLabel {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: rgba(243,244,248,0.3);
+}
 
-@media only screen and (max-width: 850px){
-    .contactContainer{
-        padding: 0rem;
-        z-index: 2;
-    }
+.contactRedesItems {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
 
-    .contact{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+.contactRedItem {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: rgba(243,244,248,0.5);
+    border: 1px solid transparent;
+    border-radius: 2px;
+    transition: .2s ease-out;
+}
 
-    .contact img{
-        aspect-ratio: 1 / 2;
-        position: absolute;
-        bottom: 20px;
-        opacity: .2;
-        mix-blend-mode: difference;
-    }
+.contactRedItem:hover {
+    color: #F3F4F8;
+    background: rgba(243,244,248,0.04);
+    border-color: rgba(243,244,248,0.1);
+}
 
+.contactRedItem span {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
 
-    .contentIvite h3{
-        line-height: 1.6rem;
-    }
+@media only screen and (max-width: 850px) {
+    .contact { padding: 56px 24px; }
 
-
-    .contactContainer p {
-        font-size: smaller;
-    }
-
-
-    .cButtons{
-        margin-top: 2rem;
-    }
-
-    .cRedes p{
-        margin-top: 2rem;
-    }
-
-    .redesData span{
-        display: none;
-    }
-
-    .btnAgendar {
-        font-size: 0.85rem;
-        padding: 0.55rem 1.1rem;
+    .contactInner {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 }
