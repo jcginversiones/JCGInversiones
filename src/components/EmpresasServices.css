@@ -1,0 +1,246 @@
+.empresasServices {
+    width: 100%;
+    padding: 72px 48px;
+    background: #141414;
+    border-top: 1px solid rgba(212,160,23,0.1);
+}
+
+.empresasHeader {
+    margin-bottom: 48px;
+    max-width: 600px;
+}
+
+.empresasEyebrow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #D4A017;
+    margin-bottom: 14px;
+}
+
+.empresasEyebrowLine {
+    display: block;
+    width: 28px;
+    height: 1px;
+    background: #D4A017;
+    flex-shrink: 0;
+}
+
+.empresasTitulo {
+    font-size: clamp(24px, 2.8vw, 36px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: #F3F4F8;
+    margin-bottom: 12px;
+}
+
+.empresasSubtitulo {
+    font-size: 13px;
+    color: rgba(243,244,248,0.48);
+    line-height: 1.7;
+}
+
+/* GRID */
+.empresasGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-bottom: 2px;
+}
+
+/* CARD */
+.empresaCard {
+    background: #1c1c1c;
+    border: 1px solid #272727;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    position: relative;
+    overflow: hidden;
+    transition: .25s ease-out;
+}
+
+.empresaCard::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background: #D4A017;
+    transition: height .3s ease-out;
+}
+
+.empresaCard:hover::after {
+    height: 100%;
+}
+
+.empresaCard:hover {
+    border-color: rgba(212,160,23,0.25);
+    transform: translateY(-3px);
+}
+
+.empresaCardTop {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.empresaNum {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: rgba(212,160,23,0.4);
+}
+
+.empresaCardTitulo {
+    font-size: 16px;
+    font-weight: 700;
+    color: #F3F4F8;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+}
+
+.empresaCardDesc {
+    font-size: 12px;
+    color: rgba(243,244,248,0.48);
+    line-height: 1.7;
+    flex: 1;
+}
+
+.empresaCardBeneficio {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px 12px;
+    background: rgba(212,160,23,0.06);
+    border: 1px solid rgba(212,160,23,0.15);
+    border-radius: 2px;
+}
+
+.empresaBeneficioDot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #D4A017;
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.empresaCardBeneficio p {
+    font-size: 11px;
+    color: rgba(212,160,23,0.75);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.empresaCardBtn {
+    display: block;
+    padding: 9px 16px;
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(243,244,248,0.6);
+    border: 1px solid rgba(243,244,248,0.15);
+    background: transparent;
+    transition: .2s ease-out;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.empresaCardBtn:hover {
+    color: #F3F4F8;
+    border-color: rgba(212,160,23,0.4);
+    background: rgba(212,160,23,0.06);
+}
+
+/* FOOTER */
+.empresasFooter {
+    background: #1a1a1a;
+    border: 1px solid #272727;
+    padding: 28px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.empresasFooterTexto {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-width: 500px;
+}
+
+.empresasFooterTitulo {
+    font-size: 15px;
+    font-weight: 700;
+    color: #F3F4F8;
+    letter-spacing: -0.01em;
+}
+
+.empresasFooterDesc {
+    font-size: 12px;
+    color: rgba(243,244,248,0.45);
+    line-height: 1.6;
+}
+
+.empresasFooterBtns {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+
+.empresasFooterBtnWpp {
+    padding: 10px 22px;
+    background: rgba(162,0,33,0.12);
+    color: #F3F4F8;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid rgba(162,0,33,0.4);
+    border-radius: 2px;
+    transition: .2s ease-out;
+    letter-spacing: 0.02em;
+}
+.empresasFooterBtnWpp:hover { background: #a20021; }
+
+.empresasFooterBtnStrategic {
+    padding: 10px 22px;
+    background: rgba(212,160,23,0.08);
+    color: #D4A017;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid rgba(212,160,23,0.35);
+    border-radius: 2px;
+    transition: .2s ease-out;
+    letter-spacing: 0.02em;
+}
+.empresasFooterBtnStrategic:hover { background: #D4A017; color: #0d0d0d; }
+
+/* RESPONSIVE */
+@media only screen and (max-width: 900px) {
+    .empresasServices { padding: 56px 24px; }
+
+    .empresasGrid {
+        grid-template-columns: 1fr;
+        gap: 2px;
+    }
+
+    .empresasFooter {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+    }
+}
