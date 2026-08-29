@@ -1,48 +1,46 @@
 .planesServices {
     width: 100%;
-    padding: 72px 48px;
+    padding: 80px 56px;
     background: #0d0d0d;
     border-top: 1px solid rgba(255,255,255,0.05);
 }
 
-.planesHeader {
-    margin-bottom: 44px;
-}
+.planesHeader { margin-bottom: 56px; }
 
 .planesEyebrow {
     display: flex;
     align-items: center;
-    gap: 12px;
-    font-size: 10px;
+    gap: 14px;
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #a20021;
-    margin-bottom: 14px;
+    margin-bottom: 20px;
 }
 
 .planesEyebrowLine {
     display: block;
-    width: 28px;
+    width: 32px;
     height: 1px;
     background: #a20021;
     flex-shrink: 0;
 }
 
 .planesTittle {
-    font-size: clamp(24px, 2.8vw, 36px);
+    font-size: clamp(32px, 3.5vw, 48px);
     font-weight: 800;
     letter-spacing: -0.02em;
     line-height: 1.1;
     color: #F3F4F8;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 .planesSubtitle {
-    font-size: 13px;
-    color: rgba(243,244,248,0.5);
-    line-height: 1.6;
-    max-width: 520px;
+    font-size: 19px;
+    color: rgba(243,244,248,0.55);
+    line-height: 1.65;
+    max-width: 600px;
 }
 
 .planesGrid {
@@ -54,10 +52,10 @@
 .planCard {
     background: #171717;
     border: 1px solid #222;
-    padding: 28px 24px;
+    padding: 36px 28px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
     transition: .25s ease-out;
 }
 
@@ -73,32 +71,29 @@
     background: linear-gradient(160deg, #171717 65%, rgba(212,160,23,0.05));
 }
 
-.planCardTop {
-    display: flex;
-    flex-direction: column;
-}
+.planCardTop { display: flex; flex-direction: column; }
 
 .planCatLabel {
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 700;
     letter-spacing: 2.5px;
     text-transform: uppercase;
     color: rgba(243,244,248,0.28);
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .planCatRE { color: rgba(212,160,23,0.55); }
 
 .planBadge {
     display: inline-block;
-    padding: 3px 10px;
+    padding: 5px 14px;
     border-radius: 2px;
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
     width: fit-content;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .planBadgeFree {
@@ -120,34 +115,34 @@
 }
 
 .planName {
-    font-size: 17px;
+    font-size: 22px;
     font-weight: 700;
     color: #F3F4F8;
     line-height: 1.2;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .planPrice {
     display: flex;
     align-items: baseline;
-    gap: 5px;
-    margin-bottom: 4px;
+    gap: 6px;
+    margin-bottom: 6px;
 }
 
 .planPriceAmount {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     font-weight: 800;
     color: #F3F4F8;
     line-height: 1;
 }
 
 .planPricePeriod {
-    font-size: 12px;
+    font-size: 16px;
     color: rgba(243,244,248,0.45);
 }
 
 .planPriceConsultar {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: rgba(243,244,248,0.7);
     margin-bottom: 4px;
@@ -155,57 +150,54 @@
 }
 
 .planPriceAlt {
-    font-size: 11px;
+    font-size: 14px;
     color: rgba(243,244,248,0.38);
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 }
 
 .planSaving { color: #4ade80; font-weight: 600; }
 
 .planDesc {
-    font-size: 12px;
-    color: rgba(243,244,248,0.48);
-    line-height: 1.6;
+    font-size: 16px;
+    color: rgba(243,244,248,0.5);
+    line-height: 1.65;
 }
 
 .planFeatures {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 9px;
+    gap: 13px;
     flex: 1;
 }
 
 .planFeatures li {
     display: flex;
     align-items: flex-start;
-    gap: 8px;
-    font-size: 12px;
-    color: rgba(243,244,248,0.5);
-    line-height: 1.4;
+    gap: 10px;
+    font-size: 15px;
+    color: rgba(243,244,248,0.55);
+    line-height: 1.5;
 }
 
 .planCheck {
     color: rgba(243,244,248,0.2);
     font-weight: 700;
     flex-shrink: 0;
-    font-size: 10px;
+    font-size: 12px;
+    margin-top: 2px;
 }
 
 .planCheckPremium { color: #a20021; }
 .planCheckRE { color: #D4A017; }
 
-.planActions {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-}
+.planActions { display: flex; flex-direction: column; gap: 10px; }
 
 .planBtn {
     display: block;
-    padding: 10px 16px;
+    padding: 14px 18px;
     border-radius: 2px;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 700;
     text-align: center;
     text-decoration: none;
@@ -237,17 +229,18 @@
 
 .planBtnSecondary {
     display: block;
-    font-size: 11px;
+    font-size: 14px;
     color: rgba(243,244,248,0.38);
     text-align: center;
     text-decoration: none;
-    padding: 5px;
+    padding: 6px;
     transition: .2s;
-    letter-spacing: 0.02em;
 }
 .planBtnSecondary:hover { color: rgba(243,244,248,0.7); }
 
 @media only screen and (max-width: 900px) {
-    .planesServices { padding: 56px 24px; }
+    .planesServices { padding: 60px 24px; }
     .planesGrid { grid-template-columns: 1fr; gap: 2px; }
+    .planesTittle { font-size: 30px; }
+    .planesSubtitle { font-size: 17px; }
 }
