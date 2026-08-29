@@ -1,7 +1,7 @@
 import './Nav.css';
 
-const Nav : React.FC = () =>{
-    return(
+const Nav: React.FC = () => {
+    return (
         <nav className='navSup'>
             <div className='navSupContainer'>
                 <header>
@@ -16,6 +16,7 @@ const Nav : React.FC = () =>{
 
                 <ul className='ulNS'>
                     <li><a href="#services">Inversiones</a></li>
+                    <li><a href="#empresas">Empresas</a></li>
                     <li><a href="#realestate">Real Estate</a></li>
                     <li><a href="#presentation">Nosotros</a></li>
                     <li><a href="#contact">Contacto</a></li>
@@ -23,13 +24,13 @@ const Nav : React.FC = () =>{
 
                 <div className='navActions'>
                     <a href="https://jcgstrategic.com" target="_blank" rel="noopener noreferrer" className='navBtnStrategic'>
-                        JCG Strategic
+                        JCG Strategic ↗
                     </a>
                     <a href="https://juancg00ginversiones.github.io/JCGdashboard/" target="_blank" rel="noopener noreferrer" className='navBtnDashboard'>
-                        Dashboard
+                        Dashboard ↗
                     </a>
                     <a href="https://plataformaingecapital.com/" target="_blank" rel="noopener noreferrer" className='navBtnPlatform'>
-                        Plataforma
+                        Plataforma ↗
                     </a>
                 </div>
             </div>
