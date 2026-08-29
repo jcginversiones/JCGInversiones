@@ -1,7 +1,6 @@
-/* ── NOSOTROS ── */
 .nosotros {
     width: 100%;
-    padding: 80px 48px;
+    padding: 72px 48px;
     background: #0f0f0f;
 }
 
@@ -13,44 +12,41 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: rgba(243,244,248,0.35);
-    margin-bottom: 14px;
+    margin-bottom: 16px;
 }
 
 .eyebrowLine {
     display: block;
     width: 28px;
     height: 1px;
-    background: var(--color1);
+    background: #a20021;
     flex-shrink: 0;
 }
 
 .nosotrosTitulo {
-    font-size: clamp(24px, 2.8vw, 38px);
+    font-size: clamp(26px, 3vw, 40px);
     font-weight: 800;
     letter-spacing: -0.02em;
     line-height: 1.1;
-    color: var(--white);
-    max-width: 480px;
+    color: #F3F4F8;
+    max-width: 520px;
 }
 
-/* ── GRID ── */
 .nosotrosGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2px;
 }
 
-/* ── CARD BASE ── */
 .teamCard {
     display: grid;
-    grid-template-columns: 200px 1fr;
-    gap: 0;
-    min-height: 360px;
+    grid-template-columns: 220px 1fr;
+    min-height: 380px;
     position: relative;
     overflow: hidden;
 }
@@ -65,7 +61,6 @@
     border: 1px solid rgba(255,255,255,0.06);
 }
 
-/* ── IMAGEN ── */
 .teamCardImgWrap {
     position: relative;
     overflow: hidden;
@@ -96,16 +91,14 @@
     background: linear-gradient(to right, transparent 60%, #161616 100%);
 }
 
-/* ── BODY ── */
 .teamCardBody {
-    padding: 32px 28px;
+    padding: 36px 32px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 12px;
 }
 
-/* ── ROLE ── */
 .teamCardRole {
     display: flex;
     align-items: center;
@@ -116,7 +109,7 @@
     text-transform: uppercase;
 }
 
-.teamCardRoleRed { color: var(--color1); }
+.teamCardRoleRed { color: #a20021; }
 .teamCardRoleGray { color: #777; }
 
 .roleDot {
@@ -126,47 +119,43 @@
     flex-shrink: 0;
 }
 
-.roleDotRed { background: var(--color1); }
+.roleDotRed { background: #a20021; }
 .roleDotGray { background: #666; }
 
-/* ── NAME ── */
 .teamCardName {
-    font-size: clamp(22px, 2vw, 28px);
+    font-size: clamp(24px, 2.2vw, 32px);
     font-weight: 800;
     letter-spacing: -0.02em;
     line-height: 1.1;
-    color: var(--white);
+    color: #F3F4F8;
 }
 
-/* ── TITLE ── */
 .teamCardTitle {
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 600;
     letter-spacing: 0.05em;
     color: rgba(243,244,248,0.4);
     text-transform: uppercase;
 }
 
-/* ── DESC ── */
 .teamCardDesc {
-    font-size: 13px;
-    line-height: 1.65;
+    font-size: 14px;
+    line-height: 1.7;
     color: rgba(243,244,248,0.5);
-    max-width: 300px;
+    max-width: 320px;
 }
 
-/* ── LINKS ── */
 .teamCardLinks {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-top: 4px;
+    margin-top: 6px;
     flex-wrap: wrap;
 }
 
 .teamSocial {
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
     border-radius: 50%;
     border: 1px solid rgba(243,244,248,0.15);
     display: flex;
@@ -178,63 +167,42 @@
 }
 
 .teamSocial:hover {
-    background: var(--color1);
-    border-color: var(--color1);
-    color: var(--white);
+    background: #a20021;
+    border-color: #a20021;
+    color: #F3F4F8;
 }
 
 .teamBtnContact {
-    padding: 8px 16px;
-    background: var(--color1);
-    color: var(--white);
-    font-size: 12px;
+    padding: 9px 18px;
+    background: #a20021;
+    color: #F3F4F8;
+    font-size: 13px;
     font-weight: 700;
     text-decoration: none;
     border-radius: 2px;
-    transition: .2s ease-out;
+    transition: .2s;
     margin-left: 4px;
 }
-
 .teamBtnContact:hover { background: #c0002a; }
 
 .teamBtnContactGold {
-    padding: 8px 16px;
+    padding: 9px 18px;
     background: transparent;
     color: #D4A017;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     text-decoration: none;
     border: 1px solid rgba(212,160,23,0.4);
     border-radius: 2px;
-    transition: .2s ease-out;
+    transition: .2s;
 }
+.teamBtnContactGold:hover { background: #D4A017; color: #0d0d0d; }
 
-.teamBtnContactGold:hover {
-    background: #D4A017;
-    color: #0d0d0d;
-}
-
-/* ── RESPONSIVE ── */
 @media only screen and (max-width: 900px) {
-    .nosotros {
-        padding: 60px 24px;
-    }
-
-    .nosotrosGrid {
-        grid-template-columns: 1fr;
-        gap: 2px;
-    }
-
-    .teamCard {
-        grid-template-columns: 140px 1fr;
-        min-height: 240px;
-    }
-
-    .teamCardBody {
-        padding: 20px 18px;
-        gap: 8px;
-    }
-
+    .nosotros { padding: 56px 24px; }
+    .nosotrosGrid { grid-template-columns: 1fr; }
+    .teamCard { grid-template-columns: 140px 1fr; min-height: 260px; }
+    .teamCardBody { padding: 20px 18px; gap: 8px; }
     .teamCardDesc { display: none; }
 }
 
@@ -243,11 +211,9 @@
         grid-template-columns: 1fr;
         grid-template-rows: 200px auto;
     }
-
     .teamCardImgOverlay {
         background: linear-gradient(to top, #141414 20%, transparent 100%);
     }
-
     .teamCardRE .teamCardImgOverlay {
         background: linear-gradient(to top, #161616 20%, transparent 100%);
     }
